@@ -23,12 +23,17 @@ module.exports = {
                         "sass-loader"
                     ]
                 })
+            },
+            {
+                test: /\.(jpg|png|jpeg|gif)$/,
+                use: "file-loader?name=images/[name].[ext]"
             }
         ]
     },
     resolve: {
         alias: {
-            styles: path.join(__dirname, "app", "styles")
+            styles: path.join(__dirname, "app", "styles"),
+            assets: path.join(__dirname, "assets")
         }
     },
     plugins: [

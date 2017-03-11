@@ -5,6 +5,7 @@ import AddressSection from "./AddressSection.jsx"
 import HCardPreview from "./HCardPreview.jsx"
 import ButtonFooter from "./ButtonFooter.jsx"
 import ResultModal from "./ResultModal.jsx"
+import placeholderImage from "assets/placeholder.jpg"
 
 import "styles/hcard-builder.scss"
 
@@ -34,7 +35,7 @@ export default React.createClass({
             state: "VIC",
             postCode: "3037",
             country: "Australia",
-            avatarImage: "http://www.vistagardentampa.org/assets/empty_avatar.jpg",
+            avatarImage: placeholderImage,
             errors: {
                 errorList: [],
                 showErrors: false
