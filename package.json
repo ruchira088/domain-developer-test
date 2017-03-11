@@ -1,12 +1,12 @@
 {
   "name": "domain-developer-test",
   "version": "1.0.0",
-  "description": "",
+  "description": "Domain front-end developer test",
   "main": "server/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --progress",
-    "start": "npm run build; node .",
+    "build": "NODE_ENV=production webpack --progress",
+    "start": "npm run build; NODE_ENV=production node .",
     "dev": "webpack-dev-server --content-base public/ --inline --hot --port 8000"
   },
   "author": "Ruchira Jayasekara <ruchira088@gmail.com>",
