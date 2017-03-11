@@ -6,10 +6,12 @@
     width: 100%;
     border: none;
     padding: 0;
-    height: 32px;
+    height: 40px;
     text-align: center;
     border-radius: 4px;
+    font-size: 16px;
     cursor: pointer;
+    font-family: $merriweather-sans;
 
     &:hover {
         opacity: 0.8;

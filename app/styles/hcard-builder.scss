@@ -1,13 +1,17 @@
+@import "constants";
+
 .hcard-builder {
 
     .hcard-builder-title {
+        font-family: $merriweather-sans;
         font-size: 24px;
         font-weight: bold;
+        color: $heading-color;
     }
 
     .preview-section {
         min-width: 320px;
-        background-color: lightgray;
+        background-color: #E1E4E7;
     }
 
     @media (min-width: 800px) {
@@ -17,7 +21,7 @@
             flex: 1;
 
             .hcard-preview {
-                padding-top: 60px;
+                padding-top: 70px;
             }
         }
     }
