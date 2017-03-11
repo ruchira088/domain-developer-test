@@ -12,29 +12,18 @@ import "styles/hcard-builder.scss"
 export default React.createClass({
 
     getInitialState() {
-        // return {
-        //     givenName: "",
-        //     surname: "",
-        //     email: "",
-        //     phone: "",
-        //     house: "",
-        //     street: "",
-        //     suburb: "",
-        //     state: "",
-        //     postCode: "",
-        //     country: ""
-        // }
+
         return {
-            givenName: "Sam",
-            surname: "Fairfax",
-            email: "sam@gmail.com",
-            phone: "0433320275",
+            givenName: "",
+            surname: "",
+            email: "",
+            phone: "",
             house: "",
-            street: "Rose Hedge Drive",
-            suburb: "Sydenham",
-            state: "VIC",
-            postCode: "3037",
-            country: "Australia",
+            street: "",
+            suburb: "",
+            state: "",
+            postCode: "",
+            country: "",
             avatarImage: placeholderImage,
             errors: {
                 errorList: [],

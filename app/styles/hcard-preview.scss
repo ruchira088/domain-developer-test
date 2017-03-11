@@ -48,9 +48,10 @@
 
         .preview-field {
             display: flex;
-            align-items: baseline;
+            align-items: flex-end;
             border-bottom: 1px solid lightgray;
             padding-top: 7px;
+            height: 16px;
 
             .preview-field-label {
                 width: 75px;
