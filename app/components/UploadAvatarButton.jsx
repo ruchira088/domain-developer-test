@@ -5,7 +5,7 @@ import "styles/upload-avatar-button.scss"
 export default ({onUpload}) => {
 
     const onChange = onFilesUpload => ({target}) => {
-        const [file] = target.files
+        const file = target.files[0]
 
         if(file != undefined) {
             onFilesUpload(file)
