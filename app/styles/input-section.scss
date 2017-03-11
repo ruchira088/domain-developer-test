@@ -1,0 +1,20 @@
+.input-section {
+    padding: 10px 0;
+
+    .input-section-title {
+        text-transform: uppercase;
+        font-size: 10px;
+        font-weight: bold;
+        border-bottom: 1px solid lightgray;
+    }
+
+    @media (min-width: 450px) {
+
+        .input-field {
+            padding: 10px 10px 0;
+            display: inline-block;
+            box-sizing: border-box;
+            width: 50%;
+        }
+    }
+}

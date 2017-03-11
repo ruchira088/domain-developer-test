@@ -1,0 +1,63 @@
+@import "constants";
+
+.hcard-preview {
+    min-width: 270px;
+    max-width: 400px;
+    padding: 30px 10px;
+    margin: auto;
+
+    .preview-header {
+        background-color: $heading-color;
+        position: relative;
+        height: 80px;
+
+        .full-name {
+            font-size: 24px;
+            color: white;
+            position: absolute;
+            bottom: 16px;
+            left: 16px;
+        }
+
+        .avatar-image-container {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+
+            .avatar-image {
+                width: 75px;
+                height: 85px;
+            }
+        }
+    }
+
+    .preview-body {
+        background-color: white;
+        padding: 10px;
+
+        .preview-body-row {
+            display: flex;
+
+            .preview-field {
+                flex: 1;
+            }
+        }
+
+        .preview-field {
+            display: flex;
+            align-items: baseline;
+            border-bottom: 1px solid lightgray;
+            padding-top: 5px;
+
+            .preview-field-label {
+                width: 75px;
+                text-transform: uppercase;
+                font-size: 12px;
+            }
+
+            .preview-field-value {
+
+            }
+        }
+    }
+}

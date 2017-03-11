@@ -1,0 +1,16 @@
+@import "general";
+
+.button-footer {
+
+    .button {
+        margin-bottom: 10px;
+    }
+
+    @media (min-width: 450px) {
+        display: flex;
+
+        > * {
+            flex: 1;
+        }
+    }
+}

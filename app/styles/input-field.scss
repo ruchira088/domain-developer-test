@@ -1,0 +1,21 @@
+.input-field {
+    padding-top: 10px;
+
+    .input-field-label {
+        text-transform: uppercase;
+        font-size: 12px;
+    }
+
+    .input-field-value {
+        width: 100%;
+        box-sizing: border-box;
+        border-radius: 3px;
+        border: 1px solid lightgray;
+        outline: none;
+        padding: 5px;
+
+        &:focus {
+            border-color: blue;
+        }
+    }
+}

@@ -1,0 +1,24 @@
+.hcard-builder {
+
+    .hcard-builder-title {
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .preview-section {
+        min-width: 320px;
+        background-color: lightgray;
+    }
+
+    @media (min-width: 800px) {
+        display: flex;
+
+        .column {
+            flex: 1;
+
+            .hcard-preview {
+                padding-top: 60px;
+            }
+        }
+    }
+}

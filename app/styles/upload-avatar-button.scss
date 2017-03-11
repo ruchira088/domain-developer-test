@@ -1,0 +1,14 @@
+@import "general";
+
+.upload-avatar-button {
+
+    #upload-avatar {
+        display: none;
+    }
+
+    .upload-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
