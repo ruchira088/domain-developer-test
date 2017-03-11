@@ -32,7 +32,7 @@ export default React.createClass({
             state: "VIC",
             postCode: "3037",
             country: "Australia",
-            avatarImage: ""
+            avatarImage: "http://www.vistagardentampa.org/assets/empty_avatar.jpg"
         }
     },
 

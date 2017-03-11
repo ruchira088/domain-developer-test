@@ -6,7 +6,7 @@
         margin-bottom: 10px;
     }
 
-    @media (min-width: 450px) {
+    @media (min-width: $medium-screen-width-start) {
         display: flex;
 
         > * {

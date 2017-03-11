@@ -1,3 +1,5 @@
+@import "constants";
+
 .input-section {
     padding: 10px 0;
 
@@ -7,10 +9,13 @@
         font-weight: bold;
         border-bottom: 1px solid lightgray;
         opacity: 0.5;
-        margin: 0 10px;
     }
 
-    @media (min-width: 450px) {
+    @media (min-width: $medium-screen-width-start) {
+
+        .input-section-title {
+            margin: 0 10px;
+        }
 
         .input-field {
             padding: 10px 10px 0;

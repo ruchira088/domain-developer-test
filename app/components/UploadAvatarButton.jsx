@@ -7,7 +7,9 @@ export default ({onUpload}) => {
     const onChange = onFilesUpload => ({target}) => {
         const [file] = target.files
 
-        onFilesUpload(file)
+        if(file != undefined) {
+            onFilesUpload(file)
+        }
     }
 
     return (
