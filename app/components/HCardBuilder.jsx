@@ -4,7 +4,7 @@ import PersonalDetails from "./PersonalDetails.jsx"
 import AddressSection from "./AddressSection.jsx"
 import HCardPreview from "./HCardPreview.jsx"
 import ButtonFooter from "./ButtonFooter.jsx"
-
+import ResultModal from "./ResultModal.jsx"
 
 import "styles/hcard-builder.scss"
 
@@ -38,7 +38,8 @@ export default React.createClass({
             errors: {
                 errorList: [],
                 showErrors: false
-            }
+            },
+            showResultModal: false
         }
     },
 
@@ -81,6 +82,24 @@ export default React.createClass({
                     showErrors: true
                 }
             })
+        } else {
+            this.setState({showResultModal: true})
+        }
+    },
+
+    getResultModal() {
+        const {showResultModal} = this.state
+
+        const hide = () => {
+            this.setState({showResultModal: false})
+        }
+
+        if(showResultModal) {
+            return (
+                <ResultModal hide={hide}/>
+            )
+        } else {
+            return null
         }
     },
 
@@ -121,6 +140,7 @@ export default React.createClass({
                 <div className="column preview-section">
                     <HCardPreview values={values}/>
                 </div>
+                { this.getResultModal() }
             </div>
         )
     }

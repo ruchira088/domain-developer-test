@@ -1,0 +1,30 @@
+@import "general";
+
+.result-modal-container {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+
+    .result-modal {
+        background-color: white;
+        padding: 10px;
+        border-radius: 5px;
+        margin: 100px auto 0;
+        max-width: 400px;
+
+        .modal-body-text {
+            font-family: $merriweather-sans;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .modal-ok-button {
+            margin-top: 40px;
+        }
+    }
+}
