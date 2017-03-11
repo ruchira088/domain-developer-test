@@ -3,9 +3,10 @@ import classNames from "classnames"
 
 import "styles/input-section.scss"
 
-export default ({title, children, onUpdateValue, values, className}) => {
+export default ({title, children, errorHandler, onUpdateValue, values, className}) => {
+
     const fields = React.Children.map(children, child => React.cloneElement(child, {
-        values,
+        values, errorHandler,
         onChange: onUpdateValue
     }))
 

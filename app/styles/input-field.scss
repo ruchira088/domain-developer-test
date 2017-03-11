@@ -2,6 +2,7 @@
 
 .input-field {
     padding-top: 10px;
+    position: relative;
 
     .input-field-label {
         text-transform: uppercase;
@@ -23,5 +24,16 @@
         &:focus {
             border-color: blue;
         }
+    }
+
+    .validation-error {
+        position: absolute;
+        right: 0;
+        bottom: -5px;
+        background-color: darkred;
+        color: white;
+        font-size: 10px;
+        padding: 3px 6px;
+        border-radius: 3px;
     }
 }
