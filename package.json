@@ -7,6 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "NODE_ENV=production webpack --progress",
     "start": "npm run build; NODE_ENV=production node .",
+    "dev:server": "npm run build; nodemon --debug=5858 .",
     "dev": "webpack-dev-server --content-base public/ --inline --hot --port 8000"
   },
   "author": "Ruchira Jayasekara <ruchira088@gmail.com>",
@@ -21,6 +22,7 @@
     "extract-text-webpack-plugin": "^2.1.0",
     "file-loader": "^0.10.1",
     "node-sass": "^4.5.0",
+    "nodemon": "^1.11.0",
     "sass-loader": "^6.0.3",
     "style-loader": "^0.13.2",
     "webpack": "^2.2.1",
