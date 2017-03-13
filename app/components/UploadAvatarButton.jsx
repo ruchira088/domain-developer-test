@@ -14,7 +14,7 @@ export default ({onUpload}) => {
 
     return (
         <div className="upload-avatar-button">
-            <input type="file" id="upload-avatar" onChange={onChange(onUpload)}/>
+            <input type="file" accept="image/*" id="upload-avatar" onChange={onChange(onUpload)}/>
             <label htmlFor="upload-avatar" className="upload-button button">Upload</label>
         </div>
     )
